@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form >
+            <h3>Contact Us</h3>
+            <input type="text" placeholder="Your Name" id="name" required>
+            <small id="name-error" class="error"></small>
+            
+            <input type="email" placeholder="Your Email" id="email" required>
+            <small id="email-error" class="error"></small>
+            
+            <input type="tel" placeholder="Your Phone" id="phone" required>
+            <small id="phone-error" class="error"></small>
+
+            <textarea placeholder="How we can help?" id="message" rows="6"></textarea>
+            <small id="message-error" class="error"></small>
+
+            <button onclick="event.preventDefault(); validateForm();" type="button">Submit</button>
+            <p id="success"></p>
+        </form>
+    </div>
+    
+    <script src="js.js"></script>
+</body>
+</html>
